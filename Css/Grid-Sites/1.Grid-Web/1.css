@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1rem 1rem;
+    background-color: antiquewhite;
+}
+
+.content{
+    border: 2px solid;
+    background-color: yellow;
+   
+}
+
+.C1 {
+    grid-column: span 5;
+}
+ .C2{
+    grid-row: span 4;
+ }
+ .C3{
+    grid-area: span 3 /span 3;
+ }
+ .C4{
+    grid-row: span 3;
+ }
+ .C5{
+    grid-column: span 4;
+ }

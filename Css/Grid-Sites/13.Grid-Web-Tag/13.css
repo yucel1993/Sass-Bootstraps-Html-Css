@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    
+}
+
+.content{
+    background-color: yellow;
+    border: 2px solid;
+    margin: 0.3rem;
+    
+}
+
+.C1{
+    grid-column: span 5;
+}
+.C2{
+    grid-row: span 4;
+}
+.C6{grid-column:  span 2;}
+.C4{
+    grid-column: span 3;
+}
+
+.C5{grid-column: span 2;}
+.C12{grid-column:  span 4;}

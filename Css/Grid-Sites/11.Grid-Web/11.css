@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.content {
+    background-color: orangered;
+    margin: 0.30rem;
+}
+
+.C1 {
+    grid-area: span 2/ span 4;
+}
+
+.C2 {
+    grid-row: span 4;
+}
+.C4{
+    grid-column: span 2;
+}
+.C5{
+    grid-column: span 2;
+}
+.C10{
+    grid-column: span 3;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        display: grid;
+        height: 100vh;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        gap: 1rem;
+        grid-template-areas: 
+        "C1"
+        "C2"
+        "C3"
+        "C4"
+        "C5"
+        "C6"
+        "C7"
+        "C8"
+        "C9"
+        "C10";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    .C1{
+        grid-area: C1;
+    }
+    .C2{
+        grid-area: C2;
+    }
+    .C3{
+        grid-area: C3;
+    }
+    .C4{
+        grid-area: C4;
+    }
+    .C5{
+        grid-area: C5;
+    }
+    .C6{
+        grid-area: C6;
+    }
+    .C7{
+        grid-area: C7;
+    }
+    .C8{
+        grid-area: C8;
+    }
+    .C9{
+        grid-area: C9;
+    }
+    .C10{
+        grid-area: C10;
+  }
+}
